@@ -30,7 +30,7 @@ public class LoginScreen extends AppCompatActivity {
             public void onClick(View v) {
                 final String email = emailValidate.getText().toString();
                 final String password = passwordFormat.getText().toString();
-                // onClick of button perform this simplest code.
+                // test 10.4.2016
                 if (validate(email) && password.length() >= 8) {
                     Toast.makeText(getApplicationContext(), "Login Successful!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginScreen.this, blank.class);

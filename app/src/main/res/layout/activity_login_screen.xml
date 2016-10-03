@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress|textWebEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailEditText"
+            android:padding="5dp"
+            android:textIsSelectable="false"
+            android:hint="E-mail"
+            android:background="#ffffff"
+            android:layout_above="@+id/passwordEditTxt"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/emailTextView"
+            android:textColor="#fe0202"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="174dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/passwordEditTxt"
+            android:padding="5dp"
+            android:textIsSelectable="false"
+            android:hint="Password"
+            android:background="#ffffff"
+            android:inputType="textPassword"
+            android:layout_alignBaseline="@+id/emailTextView"
+            android:layout_alignBottom="@+id/emailTextView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView2"
+            android:textColor="#fe0202"
+            android:layout_below="@+id/toggleTxt"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/loginBtn"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:id="@+id/toggleTxt"
+            android:textSize="15dp"
+            android:textColor="#1afaba"
+            android:layout_below="@+id/passwordEditTxt"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

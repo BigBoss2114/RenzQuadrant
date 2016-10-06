@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginScreen" />
-        <activity android:name=".blank"></activity>
+        <activity android:name=".ontouch"></activity>
     </application>
 
 </manifest>

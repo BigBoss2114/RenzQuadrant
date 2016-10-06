@@ -3,16 +3,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
-import android.text.TextUtils;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-
 import java.util.regex.Pattern;
 
 public class LoginScreen extends AppCompatActivity {
@@ -33,7 +29,7 @@ public class LoginScreen extends AppCompatActivity {
                 // push 10.4.2016
                 if (validate(email) && password.length() >= 8) {
                     Toast.makeText(getApplicationContext(), "Login Successful!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginScreen.this, blank.class);
+                    Intent intent = new Intent(LoginScreen.this, ontouch.class);
                     startActivity(intent);
                 }
                 if (!validate(email) || password.length() < 8) {

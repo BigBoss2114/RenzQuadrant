@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginScreen" />
-        <activity android:name=".ontouch"></activity>
+        <activity android:name=".ontouch" />
+        <activity android:name=".Quadrant"></activity>
     </application>
 
 </manifest>

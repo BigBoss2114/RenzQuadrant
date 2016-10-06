@@ -1,5 +1,6 @@
 package com.example.user.manigbas;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -27,7 +28,6 @@ public class ontouch extends AppCompatActivity {
                         intY = motionEvent.getY();
                         Toast.makeText(getApplicationContext(), "" + String.format("ACTION_DOWN___X:%.2f,Y:%.2f", intX, intY), Toast.LENGTH_SHORT).show();
                         return true;
-
                     case MotionEvent.ACTION_UP:
                         finalX = motionEvent.getX();
                         finalY = motionEvent.getY();
